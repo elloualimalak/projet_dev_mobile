@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#009688">
+            <TextView
+                android:text="DB01"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"></TextView>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="ID"
+                android:textSize="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/editeId"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:textSize="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Name"></TextView>
+            <EditText
+                android:id="@+id/editname"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/enregistrer"
+                android:layout_weight="1"
+                android:layout_width="20dp"
+                android:backgroundTint="#AA73CCBD"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Ensegistrer"
+                android:textColor="#4C4949">
+
+            </Button>
+            <Button
+                android:id="@+id/supprimer"
+                android:layout_weight="1"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#AA73CCBD"
+                android:text="Supprimer"
+                android:textColor="#4C4949">
+
+            </Button>
+            <Button
+                android:id="@+id/Update"
+                android:layout_weight="1"
+                android:backgroundTint="#AA73CCBD"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:text="Update"
+                android:textColor="#4C4949">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
